@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keychain by AER – Modern Version</title>
+
+    <!-- FONT LUCU -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #fcecff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #ff81d0;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px;
+            background: #ff9de7;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        /* ⭐ HERO ANIMATED BACKGROUND */
+        .hero {
+            background: url('https://i.pinimg.com/1200x/82/be/b1/82beb18579a636ccc3ca5a2da8c0eefc.jpg') repeat;
+            background-size: cover;
+            animation: gerakBg 40s linear infinite;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        @keyframes gerakBg {
+            0% { background-position: 0 0; }
+            100% { background-position: 2000px 0; }
+        }
+
+        .hero-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            line-height: 1.1;
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.5), 0 0 25px rgba(255,100,200,0.8);
+        }
+
+        section { padding: 40px; width: 90%; margin: auto; }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Fredoka One', cursive;
+            color: #cc007a;
+        }
+
+        /* ⭐ PRODUK GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* ⭐ CARD PRODUK */
+        .card {
+            background: #ffe6fa;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover { transform: scale(1.05); }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .price { font-weight: 600; color: #8b0b6c; margin-bottom: 10px; }
+        .product-name { color: #5a0a4a; margin-bottom: 8px; }
+
+        .btn-order {
+            background-color: #ff47c1;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-order:hover { background-color: #ce009e; }
+
+        /* ⭐ BUTTON REQUEST */
+        .btn-main {
+            background-color: #ff47c1;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .btn-main:hover { background-color: #ce009e; }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            border: 1px solid #aaa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #d68aff;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Keychain by AER</h1>
+    <p>Keychain lucu & pastel estetik ✨</p>
+</header>
+
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#request">Request Produk</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+    <div class="hero-title">Crafting Beauty<br>with Love ✨</div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p style="text-align:center; max-width:750px; margin:auto; font-size:17px; line-height:1.6;">
+        Keychain by AER adalah brand kerajinan tangan kreatif yang dibuat oleh tiga sahabat:
+        <b>Egi Oktavia</b>, <b>Revalia Nurmayanti</b>, dan <b>Aula Hoviah</b>.
+        Kami menciptakan gantungan kunci, boneka lucu, bunga handmade, serta buket estetik dari bahan craft premium.
+    </p>
+
+    <div style="display:flex; justify-content:center; margin-top:25px;">
+        <img src="https://i.pinimg.com/736x/7e/8a/3d/7e8a3d7f016a029fda8b1501c560e878.jpg" style="width:45%; border-radius:12px;">
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section id="layanan">
+    <h2>Produk Kami</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/a7/1f/15/a71f1589df46dd304ed2c1e2971d01f0.jpg">
+            <div class="product-name"><h3>Keychain Pink Aesthetic</h3></div>
+            <div class="price">Rp 15.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/82/be/b1/82beb18579a636ccc3ca5a2da8c0eefc.jpg">
+            <div class="product-name"><h3>Buket Mini Pastel</h3></div>
+            <div class="price">Rp 25.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/ca/97/7b/ca977b136cf795eac5689dd47ffec1e5.jpg">
+            <div class="product-name"><h3>Buket Handmade Aesthetic</h3></div>
+            <div class="price">Rp 45.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/c0/03/1f/c0031fb339ee5989bd19247df8a677f2.jpg">
+            <div class="product-name"><h3>Aksesoris Cute Craft</h3></div>
+            <div class="price">Rp 30.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/91/65/12/916512960781a1880e9c9025b36c1528.jpg">
+            <div class="product-name"><h3>Boneka Mini Handmade</h3></div>
+            <div class="price">Rp 28.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/85/94/1b/85941b9237f13304570e28c8382baaf2.jpg">
+            <div class="product-name"><h3>Paket Gift Aesthetic</h3></div>
+            <div class="price">Rp 35.000</div>
+            <button class="btn-order">Pesan Sekarang</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- REQUEST -->
+<section id="request">
+    <h2>Request Produk Custom</h2>
+    <p style="text-align:center; max-width:650px; margin:auto; font-size:17px;">
+        Ingin request bentuk keychain, buket, boneka, atau craft lain yang kamu mau?
+        Isi form ini ✨
+    </p>
+
+    <form style="margin-top:25px; max-width:600px; margin:auto;">
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <select required>
+            <option value="">Pilih Jenis Produk</option>
+            <option>Keychain</option>
+            <option>Buket</option>
+            <option>Boneka Craft</option>
+            <option>Aksesoris Custom</option>
+            <option>Lainnya</option>
+        </select>
+        <textarea rows="5" placeholder="Deskripsi request Anda..." required></textarea>
+        <button class="btn-main">Kirim Request</button>
+    </form>
+</section>
+
+<footer>&copy; Keychain by AER 2025</footer>
+
+</body>
+</html>
